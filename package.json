@@ -16,10 +16,11 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.9.3",
     "react-scripts": "5.0.1",
+    "serve": "^14.2.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
@@ -47,5 +48,7 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
-  "engines": { "node": "18.x" }
+  "engines": {
+    "node": "18.x"
+  }
 }
